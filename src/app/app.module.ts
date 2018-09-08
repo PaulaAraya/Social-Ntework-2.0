@@ -4,10 +4,20 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 // Animaciones
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MainComponent } from './main/main.component';
+import { PicturesComponent } from './pictures/pictures.component';
+import { FriendsUserComponent } from './friends-user/friends-user.component';
+import { WallComponent } from './wall/wall.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainComponent,
+    PicturesComponent,
+    FriendsUserComponent,
+    WallComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
