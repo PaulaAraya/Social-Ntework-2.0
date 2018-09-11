@@ -11,7 +11,6 @@ export const environment = {
     projectId: "socialnetwork2-36f58",
     storageBucket: "socialnetwork2-36f58.appspot.com",
     messagingSenderId: "248158446709"
-
   }
 };
 
