@@ -10,6 +10,7 @@ import { FriendsUserComponent } from './friends-user/friends-user.component';
 import { WallComponent } from './wall/wall.component';
 import { ProfileComponent } from './profile/profile.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,19 @@ import { ProfileComponent } from './profile/profile.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule
+  
+    @NgModule({
+      declarations: [
+        AppComponent
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFireAuthModule
+      providers: [AuthService],
+      bootstrap: [AppComponent]
+    ],
+    })
+    export class AppModule { }
+  
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
