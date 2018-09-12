@@ -9,6 +9,8 @@ import { PicturesComponent } from './pictures/pictures.component';
 import { FriendsUserComponent } from './friends-user/friends-user.component';
 import { WallComponent } from './wall/wall.component';
 import { ProfileComponent } from './profile/profile.component';
+import { LoginComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { ProfileComponent } from './profile/profile.component';
     PicturesComponent,
     FriendsUserComponent,
     WallComponent,
-    ProfileComponent
+    ProfileComponent,
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
