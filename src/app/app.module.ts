@@ -54,8 +54,10 @@ import { PicturesComponent } from './pictures/pictures.component';
 import { FriendsUserComponent } from './friends-user/friends-user.component';
 import { WallComponent } from './wall/wall.component';
 import { ProfileComponent } from './profile/profile.component';
-import { AuthService } from './auth.service';
+import { LoginComponent } from './login/login.component';
+import { AdminComponent } from './admin/admin.component';
 
+import { AuthService } from './auth.service';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,9 @@ import { AuthService } from './auth.service';
     PicturesComponent,
     FriendsUserComponent,
     WallComponent,
-    ProfileComponent
+    ProfileComponent,
+    LoginComponent,
+    AdminComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
