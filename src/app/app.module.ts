@@ -2,52 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { MaterialModule } from './material.module';
 
+// Firebase
 import { AngularFireModule } from 'angularfire2';
 import { environment } from '../environments/environment';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
-// Animaciones
+// Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-// Material Componentes
-import {
-  MatAutocompleteModule,
-  MatBadgeModule,
-  MatBottomSheetModule,
-  MatButtonModule,
-  MatButtonToggleModule,
-  MatCardModule,
-  MatCheckboxModule,
-  MatChipsModule,
-  MatDatepickerModule,
-  MatDialogModule,
-  MatDividerModule,
-  MatExpansionModule,
-  MatGridListModule,
-  MatIconModule,
-  MatInputModule,
-  MatListModule,
-  MatMenuModule,
-  MatNativeDateModule,
-  MatPaginatorModule,
-  MatProgressBarModule,
-  MatProgressSpinnerModule,
-  MatRadioModule,
-  MatRippleModule,
-  MatSelectModule,
-  MatSidenavModule,
-  MatSliderModule,
-  MatSlideToggleModule,
-  MatSnackBarModule,
-  MatSortModule,
-  MatStepperModule,
-  MatTableModule,
-  MatTabsModule,
-  MatToolbarModule,
-  MatTooltipModule,
-  MatTreeModule,
-} from '@angular/material';
 
 import { MainComponent } from './main/main.component';
 import { PicturesComponent } from './pictures/pictures.component';
@@ -64,6 +28,8 @@ import { ABtnSmallComponent } from './a-btn-small/a-btn-small.component';
 import { ABtnMediumComponent } from './a-btn-medium/a-btn-medium.component';
 import { AImgUserComponent } from './a-img-user/a-img-user.component';
 import { AImgMainComponent } from './a-img-main/a-img-main.component';
+import { ACardComponent } from './a-card/a-card.component';
+
 
 @NgModule({
   declarations: [
@@ -80,49 +46,15 @@ import { AImgMainComponent } from './a-img-main/a-img-main.component';
     ABtnSmallComponent,
     ABtnMediumComponent,
     AImgUserComponent,
-    AImgMainComponent
+    AImgMainComponent,
+    ACardComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MatAutocompleteModule,
-    MatBadgeModule,
-    MatBottomSheetModule,
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatCardModule,
-    MatCheckboxModule,
-    MatChipsModule,
-    MatDatepickerModule,
-    MatDialogModule,
-    MatDividerModule,
-    MatExpansionModule,
-    MatGridListModule,
-    MatIconModule,
-    MatInputModule,
-    MatListModule,
-    MatMenuModule,
-    MatNativeDateModule,
-    MatPaginatorModule,
-    MatProgressBarModule,
-    MatProgressSpinnerModule,
-    MatRadioModule,
-    MatRippleModule,
-    MatSelectModule,
-    MatSidenavModule,
-    MatSliderModule,
-    MatSlideToggleModule,
-    MatSnackBarModule,
-    MatSortModule,
-    MatStepperModule,
-    MatTableModule,
-    MatTabsModule,
-    MatToolbarModule,
-    MatTooltipModule,
-    MatTreeModule,
-    BrowserAnimationsModule
+    MaterialModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
