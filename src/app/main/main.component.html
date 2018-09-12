@@ -1,3 +1,36 @@
-<p>
-  main works!
-</p>
+<!-- NavBar -->
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span class="icon-spacer"></span>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon class="menu-icon">menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>person</mat-icon>
+          <span>Profile</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>insert_comment</mat-icon>
+          <span>Wall</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>group</mat-icon>
+          <span>Fiends</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>photo_library</mat-icon>
+            <span>Pictures</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>power_settings_new</mat-icon>
+            <span>Logout</span>
+          </button>
+      </mat-menu>
+    </mat-toolbar-row>
+  </mat-toolbar>
+<!-- Botoón redondo -->
+  <button mat-fab color="primary">
+    <mat-icon aria-label="icon-button">add</mat-icon>
+  </button>
+  
