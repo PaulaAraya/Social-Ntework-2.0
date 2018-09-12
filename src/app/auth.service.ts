@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase/app';
 
-import { } from 'rxjs/Observable';
 import { Observable } from 'rxjs';
 
 @Injectable()
@@ -22,8 +21,8 @@ export class AuthService {
         console.log('Success!', value);
       })
       .catch(err => {
-        console.log('Something went wrong:',err.message);
-      });    
+        console.log('Something went wrong:', err.message);
+      });
   }
 
   login(email: string, password: string) {
@@ -34,7 +33,7 @@ export class AuthService {
         console.log('Nice, it worked!');
       })
       .catch(err => {
-        console.log('Something went wrong:',err.message);
+        console.log('Something went wrong:', err.message);
       });
   }
 
