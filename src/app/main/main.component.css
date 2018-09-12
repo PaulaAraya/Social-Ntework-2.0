@@ -9,8 +9,3 @@
   flex: 1 1 auto;
 }
 
-/* Botón */
-.button-row button,
-.button-row a {
-  margin-right: 8px;
-}

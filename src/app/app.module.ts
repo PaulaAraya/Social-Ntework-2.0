@@ -58,6 +58,12 @@ import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 
 import { AuthService } from './auth.service';
+import { ABtnLargeComponent } from './a-btn-large/a-btn-large.component';
+import { ABtnPlusComponent } from './a-btn-plus/a-btn-plus.component';
+import { ABtnSmallComponent } from './a-btn-small/a-btn-small.component';
+import { ABtnMediumComponent } from './a-btn-medium/a-btn-medium.component';
+import { AImgUserComponent } from './a-img-user/a-img-user.component';
+import { AImgMainComponent } from './a-img-main/a-img-main.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +74,13 @@ import { AuthService } from './auth.service';
     WallComponent,
     ProfileComponent,
     LoginComponent,
-    AdminComponent
+    AdminComponent,
+    ABtnLargeComponent,
+    ABtnPlusComponent,
+    ABtnSmallComponent,
+    ABtnMediumComponent,
+    AImgUserComponent,
+    AImgMainComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
