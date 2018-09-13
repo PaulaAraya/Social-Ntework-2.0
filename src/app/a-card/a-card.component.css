@@ -1,5 +1,9 @@
-.main-card {
-  max-width: 400px; 
+.buttonGroup-row {
+  display: block;
+  padding: 1em 3em;
+  margin: 1em 25%;
 }
-
-
+.imgMain{
+  width: 400px;
+  height: auto;
+}

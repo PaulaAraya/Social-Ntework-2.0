@@ -2,10 +2,11 @@
   align-content: center;
 }
 .menu-icon {
-  padding: 0 14px;
+  padding: 0 5px;
 }
-
 .icon-spacer {
   flex: 1 1 auto;
 }
-
+.toolbar{
+  width: 100%;
+}
