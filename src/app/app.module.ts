@@ -12,7 +12,6 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 // Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
 import { MainComponent } from './main/main.component';
 import { PicturesComponent } from './pictures/pictures.component';
 import { FriendsUserComponent } from './friends-user/friends-user.component';
@@ -27,9 +26,7 @@ import { ABtnPlusComponent } from './a-btn-plus/a-btn-plus.component';
 import { ABtnSmallComponent } from './a-btn-small/a-btn-small.component';
 import { ABtnMediumComponent } from './a-btn-medium/a-btn-medium.component';
 import { AImgUserComponent } from './a-img-user/a-img-user.component';
-import { AImgMainComponent } from './a-img-main/a-img-main.component';
 import { ACardComponent } from './a-card/a-card.component';
-
 
 @NgModule({
   declarations: [
@@ -46,7 +43,6 @@ import { ACardComponent } from './a-card/a-card.component';
     ABtnSmallComponent,
     ABtnMediumComponent,
     AImgUserComponent,
-    AImgMainComponent,
     ACardComponent
   ],
   imports: [
